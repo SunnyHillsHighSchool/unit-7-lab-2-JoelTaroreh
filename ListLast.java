@@ -10,6 +10,15 @@ public class ListLast
 {
 	public static boolean go( List<Integer> ray)
 	{
-		return true;
+    //for loop from 0 to size of arraylist - 1
+    for(int i = 0; i<ray.size()-1; i++) {
+      //If statement if last element of arraylist is equal to current element of arraylist
+      if(ray.get(ray.size()-1) == ray.get(i)) {
+        //return true
+        return true;
+      }
+    }
+    //return false if for loop executed without returning true
+    return false;
 	}
 }
